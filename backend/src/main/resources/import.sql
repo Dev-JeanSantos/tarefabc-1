@@ -1,0 +1,12 @@
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Jean Charles', '123999332-09', 9600.00,  TIMESTAMP WITH TIME ZONE '1977-08-09T20:50:07.12345Z', 2);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Renato Teixeira', '234543050-58', 4300.00,  TIMESTAMP WITH TIME ZONE '1990-04-06T20:50:07.12345Z', 4);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Vinicius de Moraes', '0998765432-54', 32000.00,  TIMESTAMP WITH TIME ZONE '1988-04-04T20:50:07.12345Z', 3);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Vitor Belfort', '435875993-87', 9000.00,  TIMESTAMP WITH TIME ZONE '1984-05-23T20:50:07.12345Z', 2);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Thiago Santana', '535984774-65', 2200.00,  TIMESTAMP WITH TIME ZONE '1995-11-25T20:50:07.12345Z', 1);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Carlos Drumond', '466399339-00', 4000.00,  TIMESTAMP WITH TIME ZONE '1986-10-30T20:50:07.12345Z', 1);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Felippe Massa', '636399339-89', 1200.00,  TIMESTAMP WITH TIME ZONE '1993-12-18T20:50:07.12345Z', 0);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Edson Arantes', '366988030-23', 10000.00,  TIMESTAMP WITH TIME ZONE '1985-07-23T20:50:07.12345Z', 0);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Júlio Cesar', '377002909-83', 7800.00,  TIMESTAMP WITH TIME ZONE '1992-01-21T20:50:07.12345Z', 4);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Alexandre Magno', '477499334-36', 4002.00,  TIMESTAMP WITH TIME ZONE '1978-09-01T20:50:07.12345Z', 1);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Claudio Calvancate', '633772899-22', 29000.00,  TIMESTAMP WITH TIME ZONE '1967-05-03T20:50:07.12345Z', 1);
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Cristiane Torloni', '388002333-93', 3400.00,  TIMESTAMP WITH TIME ZONE '1983-09-24T20:50:07.12345Z', 0);
