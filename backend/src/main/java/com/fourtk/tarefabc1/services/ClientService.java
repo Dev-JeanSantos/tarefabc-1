@@ -7,12 +7,15 @@ import java.util.stream.Collectors;
 import javax.persistence.EntityNotFoundException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.fourtk.tarefabc1.dto.ClientDTO;
 import com.fourtk.tarefabc1.entities.Client;
 import com.fourtk.tarefabc1.repositories.ClientRepository;
+import com.fourtk.tarefabc1.services.exceptions.DataBaseException;
 import com.fourtk.tarefabc1.services.exceptions.ResourcesNotFoundException;
 
 @Service
@@ -65,6 +68,20 @@ public class ClientService {
 		}
 	}
 	
+	public void delete(Long id) {
+		try {
+			repository.deleteById(id);
+		}
+		catch (EmptyResultDataAccessException e) {
+			throw new ResourcesNotFoundException("Id not found" + id);
+		}
+		catch (DataIntegrityViolationException e) {
+			throw new DataBaseException("Integrity Violation" + id);
+		}
+		
+	}
+	
+	
 	private void copyDtoEntity(ClientDTO dto, Client entity) {
 		entity.setName(dto.getName());
 		entity.setCpf(dto.getCpf());
@@ -73,5 +90,7 @@ public class ClientService {
 		entity.setChildren(dto.getChildren());
 		
 	}
+
+	
 
 }
